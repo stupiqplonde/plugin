@@ -63,6 +63,7 @@ function checkNameFile(index, blob){
     if(type != "image" || blob.size <= 0){
         throw Error("Error")
     }
+    return name + "." + extension.split("+").shift();
 }
 
 
